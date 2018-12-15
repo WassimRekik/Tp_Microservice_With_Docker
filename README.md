@@ -11,17 +11,13 @@ Pour le lancement des containers de chaque services dans un réseau deocker, il 
 
 ### Prerequisites
 
-1* Java Version 1.8.0_121
-2* Docker 
-3* Docker compose (Installé par dédaut avec Docker pour Mac)
-
-```
-Give examples
-```
+* Java Version 1.8.0_121
+* Docker 
+* Docker compose (Installé par dédaut avec Docker pour Mac)
 
 ### Exécution
 
-Buid des images avec les docker files pour chaque service.
+#### Buid des images avec les docker files pour chaque service.
 
 Config service
 ```
@@ -36,62 +32,21 @@ docker build -t discovery-service .
 
 Et refaire pour product et proxy service
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+#### Lancement du réseau docker.
+Maintenant, on exécute notre ficher de composition 
 
 ```
-Give an example
+cd ../
+docker-compose up
+```
+Et pour stopper le réseau
+```
+docker-compose down
 ```
 
-### And coding style tests
 
-Explain what these tests test and why
+## Author
 
-```
-Give an example
-```
+* **REKIK Wassim** 
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
