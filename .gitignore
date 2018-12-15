@@ -1,0 +1,10 @@
+#ignore target repo
+/target
+#ignore log files
+*.log
+#ignore generated classes
+*.class
+#ignore Packages
+*.jar
+*.war
+
